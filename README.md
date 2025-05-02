@@ -1,24 +1,24 @@
-# 🏆 Interactive Sports News Website
+#  Interactive Sports News Website
 
 Welcome to the **Ultimate JavaScript Playground** — a dynamic, interactive, and stylish sports news website built as part of the `JavaScript Event Handling & Interactive Elements` assignment. This project combines HTML, CSS, and JavaScript to create a fun, feature-rich platform covering trending sports stories and events worldwide.
 
 ---
 
-## 🚀 Features
+##  Features
 
-### 🎈 1. Event Handling
+###  1. Event Handling
 - ✅ **Button Clicks**: Topic filters, contact form, and interactive UI.
 - ✅ **Hover Effects**: Stylish effects on nav links, cards, and buttons.
 - ✅ **Keypress Detection**: Live search functionality for filtering news.
 - ✅ **Bonus - Secret Double Click**: Double-click the logo for a hidden message.
 
-### 🎮 2. Interactive Elements
+###  2. Interactive Elements
 - ✅ **Color/Content Changing Button**: Toggle theme or content dynamically.
 - ✅ **Image Gallery / Slideshow**: Featured sports news includes images.
 - ✅ **Tabs / Accordion**: Career section with expandable job listings.
 - ✅ **Bonus - Animations**: Smooth transitions and hover animations via CSS & JS.
 
-### 📋 3. Form Validation
+### 3. Form Validation
 - ✅ **Required Fields**: Name, Email, and Message must be filled.
 - ✅ **Email Format Check**: Validated via HTML5 or JS regex.
 - ✅ **Password Rules**: (Optional – Can be added for login forms.)
@@ -26,17 +26,20 @@ Welcome to the **Ultimate JavaScript Playground** — a dynamic, interactive, an
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 js-event-assignment/
+
 ├── index.html # Main file with structured content and styling
+
 ├── style.css # Custom styling and animations
+
 └── script.js # JavaScript for interactivity, events, and validation
 
 
 ---
 
-## 📰 Content Sections
+## Content Sections
 
 - 🌍 Sports News (EPL, Kenya Volleyball, Gor Mahia, AFC Leopards)
 - 🔥 Trending Topics & Top Searches
