@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sports Sphere | Sports News Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('images/bg-stadium.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+
+    header, footer {
+      background-color: rgba(0, 0, 50, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
+
+    .top-bar {
+      font-size: 14px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: 160px;
+    }
+
+    .main-nav {
+      margin: 10px 0;
+    }
+
+    .main-nav a {
+      font-weight: bold;
+    }
+
+    .trending {
+      background-color: #cc0000;
+      color: #fff;
+      padding: 10px;
+      font-size: 16px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .main-content {
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .news-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 15px;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .news-card h3 {
+      margin-top: 10px;
+      font-size: 18px;
+      color: #fff;
+    }
+
+    .news-card:hover {
+      transform: scale(1.03);
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .extras {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .extras div {
+      background-color: rgba(0, 0, 50, 0.7);
+      padding: 20px;
+      margin: 10px;
+      border-radius: 10px;
+      flex: 1 1 300px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .footer-links a {
+      color: #ccc;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .top-bar {
+        flex-direction: column;
+      }
+
+      .main-nav, .footer-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .search-bar {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.search-bar input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact-section, .career {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.contact-section input, 
+.contact-section textarea {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.contact-section button {
+  padding: 10px 25px;
+  background-color: #160b7a;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact-section button:hover {
+  background-color: #240b96;
+}
+.career-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.career-list li {
+  margin: 12px 0;
+  font-size: 16px;
+}
+
+.career-list a {
+  color: #00acee;
+  text-decoration: underline;
+}
+
+.career-list a:hover {
+  color: #0077b6;
+}
+
+  </style>
+</head>
+<script src="script.js"></script>
+<body>
+
+  <header>
+    <div class="top-bar">
+      <div>May 2, 2025</div>
+      <div>
+        <a href="#">Home</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="logo">
+      <img src="images/logo.png" alt="Sports Sphere" />
+    </div>
+    <nav class="main-nav">
+      <section class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search news..." />
+      </section>      
+      <a href="#">News</a>
+      <a href="#">Fixtures</a>
+      <a href="#">Results</a>
+      <a href="#">Tables</a>
+      <a href="#">Trending</a>
+    </nav>
+  </header>
+
+  <section class="trending">
+    Man United stun Athletic Club | Chelsea nets four | Spurs beat Bodo | PSG beats Arsenal | Barcelona draws Inter
+  </section>
+
+  <main class="main-content">
+    <section class="news-grid">
+      <div class="news-card">
+        <img src="images/united.png" alt="Man United Stun Athletic Club" />
+        <h3>Man United stun Athletic Club in 3-0 Europa masterclass</h3>
+      </div>
+      <div class="news-card">
+        <img src="images/chelsea.png" alt="Chelsea Victory" />
+        <h3>Chelsea nets four against Djurgårdens in Conference League showpiece</h3>
+      </div>
+      <div class="news-card">
+        <img src="images/spurs.png" alt="Spurs Match" />
+        <h3>Spurs secure win over Bodo to stay in Europa League hunt</h3>
+      </div>
+      <div class="news-card">
+        <img src="images/dembele.png" alt="Champions League" />
+        <h3>Champions League Round-Up: PSG stun Arsenal in UEFA Champions League as Yamal pushes Barcelona to Semi-final draw</h3>
+      </div>
+    </section>
+
+    <section class="extras">
+      <div>
+        <h3>Trending Topics</h3>
+        <p>English Premier League</p>
+        <p>EPL Fixtures</p>
+        <p>Kenya Volleyball</p>
+        <p>AFC Leopards</p>
+      </div>
+      <div>
+        <h3>Top Searches</h3>
+        <p>EPL Table</p>
+        <p>KPL Fixtures</p>
+        <p>KPL Table</p>
+        <p>Ronaldo</p>
+        <p>Gor Mahia</p>
+        <p>AFC Leopards</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <p>Facebook – <a href="#" style="color: #0af;">Sports Sphere</a></p>
+        <p>X – <a href="#" style="color: #0af;">@Sports Sphere</a></p>
+      </div>
+      <section class="contact-section">
+  <h2>Contact Us</h2>
+  <form id="contactForm">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+    </section>
+  </main>
+ 
+  <footer> 
+    <div class="footer-links">
+      <a href="#">About</a> |
+      <a href="#">Privacy</a> |
+      <a href="#">Contact Us</a>
+    </div>
+    <section class="career">
+      <h2>Join Our Team</h2>
+      <p>Are you passionate about sports and media? Explore our current openings:</p>
+    
+      <ul class="career-list">
+        <li>
+          <strong>Sports Reporter (Nairobi)</strong> – <a href="mailto:careers@sportsnews.com?subject=Application%20for%20Sports%20Reporter">Apply via Email</a>
+        </li>
+        <li>
+          <strong>Photographer (Remote)</strong> – <a href="#">Apply Online</a>
+        </li>
+        <li>
+          <strong>Content Writer (Part-Time)</strong> – <a href="#">View Details</a>
+        </li>
+        <li>
+          <strong>Content Writer (Internship)</strong> – <a href="#">See Role</a>
+        </li>
+      </ul>
+    
+      <p>If your dream role isn't listed, send your CV to: <a href="mailto:afuyojefther@gmail.com">afuyojefther@gmail.com</a></p>
+    </section>
+    
+    <p>© 2025 Sports Sphere. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
